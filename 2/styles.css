@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    border: 2px solid black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    height: 200px;
+    width: 700px;
+}
+
+[class|="flex-item"] {
+    flex-basis: 100px;
+    padding: 8px;
+}
+
+.flex-item-1, .flex-item-5 {
+    align-self: flex-end;
+}
+.flex-item-3 {
+    align-self: flex-start;
+}

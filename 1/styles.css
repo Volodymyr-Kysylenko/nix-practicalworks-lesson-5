@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.flex-container {
+    height: 200px;
+    width: 600px;
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: flex-end;
+}
+
+[class|="flex-item"] {
+    margin: 4px;
+    height: calc((200px)/5 + 12px);
+}
+
+.flex-item-1 {
+    order: 2;
+}
+
+.flex-item-2 {
+    order: 5;
+}
+
+.flex-item-3 {
+    order: 3;
+}
+
+.flex-item-4 {
+    order: 4;
+}
+
+.flex-item-5 {
+    order: 1;
+}
